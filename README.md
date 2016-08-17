@@ -15,5 +15,7 @@ devtools::install_github("yutannihilation/twihttr")
 ## Example
 
 ```R
-...
+library(twihttr)
+
+twtr_search_tweets(q = "#TokyoR")
 ```
