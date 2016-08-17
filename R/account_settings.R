@@ -1,0 +1,43 @@
+#' POST account/settings
+#'
+#' @seealso \url{https://dev.twitter.com/rest/reference/post/account/settings}
+#' @param sleep_time_enabled
+#'      When set to true, t or 1, will enable sleep time for the user. Sleep time is the time when push or
+#'      SMS notifications should not be sent to the user.
+#'      Example Values: true
+#' @param start_sleep_time
+#'      The hour that sleep time should begin if it is enabled. The value for this parameter should be
+#'      provided in ISO8601 format (i.e. 00-23). The time is considered to be in the same timezone as the
+#'      userÅfs time_zone setting.
+#'      Example Values: 13
+#' @param end_sleep_time
+#'      The hour that sleep time should end if it is enabled. The value for this parameter should be
+#'      provided in ISO8601 format (i.e. 00-23). The time is considered to be in the same timezone as the
+#'      userÅfs time_zone setting.
+#'      Example Values: 13
+#' @param time_zone
+#'      The timezone dates and times should be displayed in for the user. The timezone must be one of the
+#'      Rails TimeZone names.
+#'      Example Values: Europe/Copenhagen, Pacific/Tongatapu
+#' @param trend_location_woeid
+#'      The Yahoo! Where On Earth ID to use as the userÅfs default trend location. Global information is
+#'      available by using 1 as the WOEID. The woeid must be one of the locations returned by [node:59].
+#'      Example Values: 1
+#' @param allow_contributor_request
+#'      Whether to allow others to include user as contributor. Possible values include ÅgallÅh (anyone can
+#'      include user), ÅgfollowingÅh (only followers can include user) or ÅgnoneÅh.
+#'      Also note that changes to this field require the request also include a Ågcurrent_passwordÅh value
+#'      with the userÅfs password to successfully modify this field.
+#'      Example Values: 1
+#' @param lang
+#'      The language which Twitter should render in for this user. The language must be specified by the
+#'      appropriate two letter ISO 639-1 representation. Currently supported languages are provided by this
+#'      endpoint.
+#'      Example Values: it, en, es
+#' @export
+twtr_account_settings <- function(sleep_time_enabled = NULL, start_sleep_time = NULL, end_sleep_time = NULL, time_zone = NULL, trend_location_woeid = NULL, 
+    allow_contributor_request = NULL, lang = NULL, ...) {
+    twtr_api("POST", "https://api.twitter.com/1.1/account/settings.json", body = list(sleep_time_enabled = sleep_time_enabled, start_sleep_time = start_sleep_time, 
+        end_sleep_time = end_sleep_time, time_zone = time_zone, trend_location_woeid = trend_location_woeid, allow_contributor_request = allow_contributor_request, 
+        lang = lang, ...))
+}

@@ -9,44 +9,46 @@ twtr_statuses_update(status, in_reply_to_status_id = NULL,
   display_coordinates = NULL, trim_user = NULL, media_ids = NULL, ...)
 }
 \arguments{
-\item{status}{The text of your status update, typically up to 140 characters. URL encode as
-necessary. t.co link wrapping may affect character counts. There are some special
-commands in this field to be aware of. For instance, preceding a message with ÅgD Åh or
-ÅgM Åh and following it with a screen name can create a direct message to that user if
-the relationship allows for it.}
+\item{status}{The text of your status update, typically up to 140 characters. URL encode as necessary. t.co link
+wrapping may affect character counts.
+There are some special commands in this field to be aware of. For instance, preceding a message with
+ÅgD Åh or ÅgM Åh and following it with a screen name can create a direct message to that user if the
+relationship allows for it.}
 
-\item{in_reply_to_status_id}{The ID of an existing status that the update is in reply to. Note::
-This parameter will be ignored unless the author of the tweet this
-parameter references is mentioned within the status text. Therefore,
-you must include @username, where username is the author of the
-referenced tweet, within the update.}
+\item{in_reply_to_status_id}{The ID of an existing status that the update is in reply to.
+Note:: This parameter will be ignored unless the author of the tweet this parameter references
+is mentioned within the status text. Therefore, you must include @username, where username is the
+author of the referenced tweet, within the update.}
 
-\item{possibly_sensitive}{If you upload Tweet media that might be considered sensitive content such
-as nudity, violence, or medical procedures, you should set this value to
-true. See Media setting and best practices for more context. Defaults to
-false. Example Values: true}
+\item{possibly_sensitive}{If you upload Tweet media that might be considered sensitive content such as nudity, violence, or
+medical procedures, you should set this value to true. See Media setting and best practices for more
+context. Defaults to false.
+Example Values: true}
 
-\item{lat}{The latitude of the location this tweet refers to. This parameter will be ignored unless
-it is inside the range -90.0 to +90.0 (North is positive) inclusive. It will also be
-ignored if there isnÅft a corresponding long parameter. Example Values: 37.7821120598956}
+\item{lat}{The latitude of the location this tweet refers to. This parameter will be ignored unless it is
+inside the range -90.0 to +90.0 (North is positive) inclusive. It will also be ignored if there
+isnÅft a corresponding long parameter.
+Example Values: 37.7821120598956}
 
-\item{long}{The longitude of the location this tweet refers to. The valid ranges for longitude
-is -180.0 to +180.0 (East is positive) inclusive. This parameter will be ignored if
-outside that range, if it is not a number, if geo_enabled is disabled, or if there not a
-corresponding lat parameter. Example Values: -122.400612831116}
+\item{long}{The longitude of the location this tweet refers to. The valid ranges for longitude is -180.0 to
++180.0 (East is positive) inclusive. This parameter will be ignored if outside that range, if it is
+not a number, if geo_enabled is disabled, or if there not a corresponding lat parameter.
+Example Values: -122.400612831116}
 
-\item{place_id}{A place in the world. Example Values: df51dec6f4ee2b2c}
+\item{place_id}{A place in the world.
+Example Values: df51dec6f4ee2b2c}
 
-\item{display_coordinates}{Whether or not to put a pin on the exact coordinates a tweet has been
-sent from. Example Values: true}
+\item{display_coordinates}{Whether or not to put a pin on the exact coordinates a tweet has been sent from.
+Example Values: true}
 
-\item{trim_user}{When set to either true, t or 1, each Tweet returned in a timeline will include a
-user object including only the status authors numerical ID. Omit this parameter to
-receive the complete user object. Example Values: true}
+\item{trim_user}{When set to either true, t or 1, each Tweet returned in a timeline will include a user object
+including only the status authors numerical ID. Omit this parameter to receive the complete user
+object.
+Example Values: true}
 
-\item{media_ids}{A list of media_ids to associate with the Tweet. You may include up to 4 photos or
-1 animated GIF or 1 video in a Tweet. See Uploading Media for further details on
-uploading media. Example Values: 471592142565957632}
+\item{media_ids}{A list of media_ids to associate with the Tweet. You may include up to 4 photos or 1 animated GIF or
+1 video in a Tweet. See Uploading Media for further details on uploading media.
+Example Values: 471592142565957632}
 }
 \description{
 POST statuses/update

@@ -4,6 +4,6 @@
 \alias{twtr_api}
 \title{Twitter API}
 \usage{
-twtr_api(verb, path, query = NULL, body = NULL, as = NULL)
+twtr_api(verb, url, query = NULL, body = NULL, as = NULL)
 }
 
