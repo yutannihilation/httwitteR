@@ -2,4 +2,7 @@
 
 export(twtr_api)
 export(twtr_auth)
+export(twtr_direct_messages)
 export(twtr_search_tweets)
+export(twtr_statuses_update)
+export(twtr_statuses_user_timeline)
