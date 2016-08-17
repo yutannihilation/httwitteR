@@ -1,0 +1,14 @@
+Package: twihttr
+Type: Package
+Title: A Thin Wrapper of httr to Use Twitter API
+Version: 0.0.1
+Author: Hroaki Yutani
+Maintainer: Hiroaki Yutani<yutani.ini@gmail.com>
+Description: Use twitter API.
+License: MIT + file LICENSE
+Depends:
+    R (>= 3.1.2)
+Imports:
+    httr
+LazyData: TRUE
+RoxygenNote: 5.0.1
