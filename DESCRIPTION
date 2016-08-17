@@ -9,6 +9,8 @@ License: MIT + file LICENSE
 Depends:
     R (>= 3.1.2)
 Imports:
-    httr
+    httr,
+    stringr,
+    purrr
 LazyData: TRUE
 RoxygenNote: 5.0.1
