@@ -9,7 +9,7 @@ twtr_users_search(q, page = NULL, count = NULL, include_entities = NULL,
 }
 \arguments{
 \item{q}{The search query to run against people search.
-Example Values: Twitter%20API}
+Example Values: Twitter\%20API}
 
 \item{page}{Specifies the page of results to retrieve.
 Example Values: 3}

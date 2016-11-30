@@ -13,4 +13,7 @@ Example Values: 313006}
 \description{
 GET saved_searches/show/:id
 }
+\seealso{
+\url{https://dev.twitter.com/rest/reference/get/saved_searches/show/\%3Aid}
+}
 

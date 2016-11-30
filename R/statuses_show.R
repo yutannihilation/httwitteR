@@ -1,6 +1,6 @@
 #' GET statuses/show/:id
 #'
-#' @seealso \url{https://dev.twitter.com/rest/reference/get/statuses/show/%3Aid}
+#' @seealso \url{https://dev.twitter.com/rest/reference/get/statuses/show/\%3Aid}
 #' @param id
 #'      The numerical ID of the desired Tweet.
 #'      Example Values: 123
@@ -19,6 +19,6 @@
 #'      Example Values: false
 #' @export
 twtr_statuses_show <- function(id, trim_user = NULL, include_my_retweet = NULL, include_entities = NULL, ...) {
-    twtr_api("GET", "https://api.twitter.com/1.1/statuses/show.json", query = list(trim_user = trim_user, include_my_retweet = include_my_retweet, 
+    twtr_api("GET", "https://api.twitter.com/1.1/statuses/show.json", query = list(trim_user = trim_user, include_my_retweet = include_my_retweet,
         include_entities = include_entities, ...))
 }

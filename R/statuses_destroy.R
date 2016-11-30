@@ -1,6 +1,6 @@
 #' POST statuses/destroy/:id
 #'
-#' @seealso \url{https://dev.twitter.com/rest/reference/post/statuses/destroy/%3Aid}
+#' @seealso \url{https://dev.twitter.com/rest/reference/post/statuses/destroy/\%3Aid}
 #' @param id
 #'      The numerical ID of the desired status.
 #'      Example Values: 123

@@ -27,4 +27,7 @@ Example Values: false}
 \description{
 GET statuses/show/:id
 }
+\seealso{
+\url{https://dev.twitter.com/rest/reference/get/statuses/show/\%3Aid}
+}
 

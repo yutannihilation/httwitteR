@@ -1,6 +1,6 @@
 #' GET saved_searches/show/:id
 #'
-#' @seealso \url{https://dev.twitter.com/rest/reference/get/saved_searches/show/%3Aid}
+#' @seealso \url{https://dev.twitter.com/rest/reference/get/saved_searches/show/\%3Aid}
 #' @param id
 #'      The ID of the saved search.
 #'      Example Values: 313006

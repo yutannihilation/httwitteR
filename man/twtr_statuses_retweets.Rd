@@ -21,4 +21,7 @@ Example Values: true}
 \description{
 GET statuses/retweets/:id
 }
+\seealso{
+\url{https://dev.twitter.com/rest/reference/get/statuses/retweets/\%3Aid}
+}
 

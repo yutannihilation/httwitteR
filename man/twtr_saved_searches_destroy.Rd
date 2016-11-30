@@ -13,4 +13,7 @@ Example Values: 313006}
 \description{
 POST saved_searches/destroy/:id
 }
+\seealso{
+\url{https://dev.twitter.com/rest/reference/post/saved_searches/destroy/\%3Aid}
+}
 

@@ -4,8 +4,8 @@
 #' @param url
 #'      The URL of the Tweet to be embedded.
 #'      Example Values:
-#'      To embed the Tweet at https://twitter.com/Interior/status/507185938620219395, use:https%3A%2F
-#'      %2Ftwitter.com%2FInterior%2Fstatus%2F507185938620219395
+#'      To embed the Tweet at https://twitter.com/Interior/status/507185938620219395, use:https\%3A\%2F
+#'      \%2Ftwitter.com\%2FInterior\%2Fstatus\%2F507185938620219395
 #' @param maxwidth
 #'      The maximum width of a rendered Tweet in whole pixels. This value must be between 220 and 550
 #'      inclusive. A supplied value under or over the allowed range will be returned as the minimum or
@@ -50,8 +50,8 @@
 #'      a Tweet overlay when a viewer clicks on the Twitter bird logo.
 #'      Example Value: 1
 #' @export
-twtr_oembed <- function(url, maxwidth = NULL, hide_media = NULL, hide_thread = NULL, omit_script = NULL, align = NULL, related = NULL, lang = NULL, 
+twtr_oembed <- function(url, maxwidth = NULL, hide_media = NULL, hide_thread = NULL, omit_script = NULL, align = NULL, related = NULL, lang = NULL,
     widget_type = NULL, hide_tweet = NULL, ...) {
-    twtr_api("GET", "https://publish.twitter.com/oembed", query = list(url = url, maxwidth = maxwidth, hide_media = hide_media, hide_thread = hide_thread, 
+    twtr_api("GET", "https://publish.twitter.com/oembed", query = list(url = url, maxwidth = maxwidth, hide_media = hide_media, hide_thread = hide_thread,
         omit_script = omit_script, align = align, related = related, lang = lang, widget_type = widget_type, hide_tweet = hide_tweet, ...))
 }

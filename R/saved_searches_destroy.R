@@ -1,6 +1,6 @@
 #' POST saved_searches/destroy/:id
 #'
-#' @seealso \url{https://dev.twitter.com/rest/reference/post/saved_searches/destroy/%3Aid}
+#' @seealso \url{https://dev.twitter.com/rest/reference/post/saved_searches/destroy/\%3Aid}
 #' @param id
 #'      The ID of the saved search.
 #'      Example Values: 313006

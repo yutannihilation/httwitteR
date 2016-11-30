@@ -11,8 +11,8 @@ twtr_oembed(url, maxwidth = NULL, hide_media = NULL, hide_thread = NULL,
 \arguments{
 \item{url}{The URL of the Tweet to be embedded.
 Example Values:
-To embed the Tweet at https://twitter.com/Interior/status/507185938620219395, use:https%3A%2F
-%2Ftwitter.com%2FInterior%2Fstatus%2F507185938620219395}
+To embed the Tweet at https://twitter.com/Interior/status/507185938620219395, use:https\%3A\%2F
+\%2Ftwitter.com\%2FInterior\%2Fstatus\%2F507185938620219395}
 
 \item{maxwidth}{The maximum width of a rendered Tweet in whole pixels. This value must be between 220 and 550
 inclusive. A supplied value under or over the allowed range will be returned as the minimum or

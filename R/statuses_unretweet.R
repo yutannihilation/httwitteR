@@ -1,6 +1,6 @@
 #' POST statuses/unretweet/:id
 #'
-#' @seealso \url{https://dev.twitter.com/rest/reference/post/statuses/unretweet/%3Aid}
+#' @seealso \url{https://dev.twitter.com/rest/reference/post/statuses/unretweet/\%3Aid}
 #' @param id
 #'      The numerical ID of the desired retweet status.
 #'      Example Values: 123
